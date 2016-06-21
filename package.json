@@ -1,0 +1,51 @@
+{
+  "name": "node-mesh-api",
+  "version": "0.0.1",
+  "description": "Node Distributed Mesh Rpc",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "babel-compile -p es2015 src:lib",
+    "start": "node --harmony ./run-dev.js"
+  },
+  "keywords": [
+    "mesh",
+    "node",
+    "rpc",
+    "api",
+    "discovery"
+  ],
+  "author": "Pilipenko Igor",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-compile": "^2.0.0",
+    "babel-eslint": "^6.0.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "concurrently": "^2.1.0",
+    "eslint": "^2.12.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.5.3",
+    "eslint-plugin-react": "^5.2.0",
+    "dateformat": "^1.0.12",
+    "log-timestamp": "^0.1.2"
+  },
+  "dependencies": {
+    "app-root-dir": "^1.0.2",
+    "arguments-to-array": "^1.0.0",
+    "bluebird": "^3.4.0",
+    "deep-equal": "^1.0.1",
+    "get-env": "^0.4.0",
+    "joi": "^8.4.2",
+    "json-safe-parse": "0.0.2",
+    "loki": "0.0.0",
+    "lokijs": "^1.3.19",
+    "longjohn": "^0.2.11",
+    "merge": "^1.2.0",
+    "network": "^0.2.0",
+    "pnode": "^0.2.5",
+    "random-js": "^1.0.8",
+    "uuid4": "^1.0.0"
+  }
+}

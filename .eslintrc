@@ -1,0 +1,48 @@
+{ "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "max-len": 1,
+    "no-underscore-dangle": 0,
+    "no-confusing-arrow": 0,
+    "no-return-assign": 0,
+    "consistent-return": 0,
+    "react/no-multi-comp": 0,
+    "react/jsx-closing-bracket-location": 0,
+    "react/prefer-stateless-function": 0,
+    "import/default": 0,
+    "import/no-duplicates": 0,
+    "import/named": 0,
+    "import/namespace": 0,
+    "import/no-unresolved": 0,
+    "import/no-named-as-default": 2,
+    "comma-dangle": 0,  // not sure why airbnb turned this on. gross!
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "no-console": 1,
+    "no-alert": 1,
+    "global-require": 0,
+    "no-use-before-define": 0
+  },
+  "plugins": [
+    "react", "import"
+  ],
+  "parser": "babel-eslint",
+  "settings": {
+    "import/parser": "babel-eslint",
+    "import/resolve": {
+      "moduleDirectory": ["node_modules", "src"]
+    }
+  },
+  "globals": {
+    "__DEVELOPMENT__": true,
+    "__CLIENT__": true,
+    "__SERVER__": true,
+    "__DISABLE_SSR__": true,
+    "__DEVTOOLS__": true,
+    "socket": true,
+    "webpackIsomorphicTools": true
+  }
+}
